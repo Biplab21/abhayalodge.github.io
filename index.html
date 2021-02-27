@@ -10,28 +10,29 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Baloo+Bhaina+2&family=Josefin+Sans&family=Kanit:wght@500&display=swap"
-        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;900&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <div class="navbar">
+        <div class="logo">
+            <span>Welcome to Abhaya Lodge</span>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#packages">Packages</a></li>
+                <li><a href="/abhayalodge.github.io/gallery.html">Gallery</a></li>
+                <li><a href="/abhayalodge.github.io/contactUs.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
     <!-- Hero section -->
     <section id="hero">
-        <div class="navbar">
-            <div class="logo">
-                <span>Welcome to Abhaya Lodge</span>
-            </div>
-            <div class="menu">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#packages">Packages</a></li>
-                    <li><a href="/gallery.html">Gallery</a></li>
-                    <li><a href="/contactUs.html">Contact Us</a></li>
-                    <li><a href="/about.html">About Us</a></li>
-                </ul>
-            </div>
+      
+
             <div class="wrapper">
                 <div class="prev-btn"><i class="fas fa-chevron-left"></i></div>
 
@@ -55,7 +56,6 @@
                 <div class="next-btn"><i class="fas fa-chevron-right"></i>
                 </div>
             </div>
-        </div>
     </section>
     <div class="navigation-dots">
     </div>
@@ -63,74 +63,78 @@
     <!-- Services Section -->
     <section id="services" class="services">
         <div class="whole-service">
-            <h1>Our Services</h1>
-            <div class="lodging-container">
-                <div class="lodging">
-                    <h3>Lodging</h3>
-                    <div class="lodging-left">
-                        <img src="/images/Lodging.jpg" alt="">
-                    </div>
-                    <div class="lodging-center">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, ab? Eveniet nemo
-                            ducimus
-                            odit odio dolorum! Vero ve
-                            .</p>
-                    </div>
-                    <div class="lodging-right">
-                        <h3>Room Amentities</h3>
-                        <ul class="Lodging-features">
-                            <li>Double Bed</li>
-                            <li>Four Bed</li>
-                            <li>Six Bed</li>
-                            <li>AC</li>
-                            <li>TV</li>
-                            <li>Geyser</li>
-                            <li>Attached Bathroom</li>
-                        </ul>
+            <h1>Services We Offer</h1>
+            <div>
+                <div class="service__item">
+                    <h3>Comfortable Lodging</h3>
+                    <div class="service__container">
+                        <div class="service__left">
+                            <img src="images/Lodging.jpg" alt="">
+                        </div>
+                        <div class="service__right">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, ab? Eveniet nemo
+                                ducimus
+                                odit odio dolorum! Vero ve
+                                .</p>
+                        </div>
+                        <!-- <div class="lodging-right">
+                            <h3>Room Amentities</h3>
+                            <ul class="Lodging-features">
+                                <li>Double Bed</li>
+                                <li>Four Bed</li>
+                                <li>Six Bed</li>
+                                <li>AC</li>
+                                <li>TV</li>
+                                <li>Geyser</li>
+                                <li>Attached Bathroom</li>
+                            </ul>
+                        </div> -->
                     </div>
                 </div>
+                
 
 
-                <div class="fooding-container">
-                    <div class="fooding">
-                        <h3>Fooding</h3>
-                        <div class="fooding-right">
-                            <img src="/images/food.jpg" alt="">
+                    <div class="service__item">
+                        <h3>Delicious Fooding</h3>
+                        <div class="service__container service__reverse">
+
+                        <div class="service__left">
+                            <img src="images/food.jpg" alt="">
                         </div>
-                        <div class="fooding-center">
+                        <div class="service__right">
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, ab? Eveniet nemo
                                 ducimus
                                 odit odio
                                 .</p>
                         </div>
-                    </div>
-                </div>
-
-
-                <div class="parking-container">
-                    <div class="parking">
-                        <h3>Parking</h3>
-                        <div class="parking-left">
-                            <img src="/images/parking.jpg" alt="">
                         </div>
-                        <div class="parking-center">
+                    </div>
+
+
+                    <div class="service__item">
+                        <h3>Easy Parking</h3>
+                        <div class="service__container">
+                        <div class="service__left">
+                            <img src="images/parking.jpg" alt="">
+                        </div>
+                        <div class="service__right">
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, ab? Eveniet
                                 nemo
                                 ducimus
                                 odit odio dolorum! Vero veniam inventore magni
                             </p>
                         </div>
-                    </div>
-                </div>
-
-
-                <div class="sightseeing-container">
-                    <div class="sightseeing">
-                        <h3>Sight Seeing</h3>
-                        <div class="sightseeing-right">
-                            <img src="/images/sc2.jpg" alt="">
                         </div>
-                        <div class=" sightseeing-center">
+                    </div>
+
+
+                    <div class="service__item">
+                        <h3>Natural Sight Seeing</h3>
+                        <div class="service__container service__reverse">
+                        <div class="service__left">
+                            <img src="images/sc2.jpg" alt="">
+                        </div>
+                        <div class="service__right">
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, ab? Eveniet nemo
                                 ducimus
                                 odit odio dolorum! Vero veniam inventore magni libero neque quod obcaecati aliquam, esse
@@ -140,13 +144,13 @@
                     </div>
                 </div>
 
-                <div class="pickup-container">
-                    <div class="pickup">
-                        <h3>Pickup and Drop</h3>
-                        <div class="pickup-left">
-                            <img src="/images/carpool.jpg" alt="">
+                <div class="service__item">
+                    <h3>Pickup and Drop</h3>
+                    <div class="service__container">
+                        <div class="service__left">
+                            <img src="images/carpool.jpg" alt="">
                         </div>
-                        <div class="pickup-center">
+                        <div class="service__right">
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, ab? Eveniet nemo
                                 ducimus
                                 .</p>
@@ -162,7 +166,7 @@
             <div class="package-container">
                 <div class="row">
                     <div class="image">
-                        <img src="/images/Super Basic.jpg" alt="" srcset="">
+                        <img src="images/Super Basic.jpg" alt="" srcset="">
                         <div class="details">
                             <h2>Super Basic Package</h2>
                             <p>We welcome our guests, to enjoy an amazing stay with us in lodge Avoya. With the super
@@ -179,7 +183,7 @@
             <div class="package-container">
                 <div class="row">
                     <div class="image">
-                        <img src="/images/Basic.jpg" alt="" srcset="">
+                        <img src="images/Basic.jpg" alt="" srcset="">
                         <div class="details">
                             <h2>Basic Package</h2>
                             <p>The basic package includes Lodging and Fooding. <br>Our guests can enjoy their stay in
@@ -195,7 +199,7 @@
             <div class="package-container">
                 <div class="row">
                     <div class="image">
-                        <img src="/images/Special.jpg" alt="" srcset="">
+                        <img src="images/Special.jpg" alt="" srcset="">
                         <div class="details">
                             <h2>Special Package</h2>
                             <p>Special package includes every service we offer in the basic package. <br>We will Also

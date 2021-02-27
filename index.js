@@ -15,7 +15,7 @@ function init () {
     // slideImage[2]= 200%
 
     slideImage.forEach((img, i) => {
-        img.style.left = i * 100 + "%";
+        img.style.left = i * 100 + "vw";
     });
     slideImage[ 0 ].classList.add("active");
     createNavigationDots();

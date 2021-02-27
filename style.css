@@ -8,21 +8,32 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 /* <---------Hero section-------> */
 #hero {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 90vh;
 }
 .navbar {
-  font-family: "Josefin Sans", sans-serif;
-  height: 6rem;
+  font-family: 'Inter', sans-serif;
+  height: 4.5rem;
   display: flex;
   background: #161515;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  overflow-x: hidden;
+
 }
 .logo {
   width: 30%;
-  height: 6rem;
+  height: 4.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -38,9 +49,10 @@ html {
 .menu {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   width: 70%;
-  height: 6rem;
+  height: 4.5rem;
+
   /* background-color: wheat; */
 }
 .menu ul {
@@ -53,21 +65,22 @@ html {
 .menu ul li a {
   text-decoration: none;
   color: white;
-  font-size: 25px;
-  /* background-color: red; */
-  padding: 1rem 3rem;
-  margin: 0px 3px;
+  font-size: 15px;
+ 
+  padding: 1em 1em;
 }
 .menu ul li a:hover {
   background: rgb(37, 34, 34);
+  border-radius: 0.3em;
+
 }
 
 .wrapper {
   overflow: hidden;
-  top: 5.7em;
+  /* top: 5.7em; */
   position: absolute;
   width: 100%;
-  height: 89.1vh;
+  height: 90vh;
 }
 .slides-container {
   height: 500px;
@@ -77,7 +90,7 @@ html {
 }
 .slide-image {
   height: 100%;
-  width: 100%;
+  width: 100vw;
   position: absolute;
 }
 .slide-image img {
@@ -134,57 +147,59 @@ html {
 
 /* <---------Service section-------> */
 .services {
-  height: 151rem;
+  /* height: 151rem; */
   width: 100%;
 }
 .whole-service {
   background-color: wheat;
-  margin: -12px 0px;
+  padding: 10em auto;
 }
 .services h1 {
-  font-family: "Kanit", sans-serif;
+  font-family: 'Inter', sans-serif;
+  font-weight: 900;
   font-size: 40px;
+  padding-top: 1.5em;
   justify-content: center;
   align-items: center;
   display: flex;
-  padding: 18px 0px;
+  text-shadow: 0 1px 5px #3e3e3e57;
 }
-/* .lodging-container {
-  margin: 10px 0px;
-} */
-.lodging {
-  height: 50vh;
+.service__container {
   display: flex;
+  margin: 1em auto;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  /* margin: 10px 0px; */
+
+}
+.service__item {
+  min-height: 70vh;
+  width: 100%;
   /* background-color: red; */
   position: relative;
   justify-content: center;
 }
 
-.lodging h3 {
-  font-family: "Baloo Bhaina 2", cursive;
-  display: flex;
+.service__item h3 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
   font-size: 2rem;
   padding: 5px 0px;
   margin: 4px 0px;
+  text-align: center;
+  text-shadow: 0 1px 5px #20202071;
 }
-.lodging .lodging-right {
-  border-radius: 12px;
-  border: 5px solid white;
-  position: absolute;
-  left: 79%;
-  top: 10%;
-  color: white;
-  border: 2px solid black;
-  position: absolute;
-  left: 79%;
-  top: 5%;
-  background-color: rgb(46, 38, 38);
-  background: linear-gradient(#f13b3c, #bb64c5);
-  height: 24rem;
-  box-shadow: rgb(0 0 0 / 20%) 0px 18px 8px 0px,
-    rgb(0 0 0 / 19%) 0px 6px 20px 0px;
+
+.service__right {
+ font-size: 2em;
+ width: 50%;
+ font-family: 'Inter', sans-serif;
+ font-weight: 400;
+ padding: 1em;
 }
-.lodging .lodging-center {
+
+.service__item .lodging-center {
   /* border: 2px solid black; */
   position: absolute;
   left: 45rem;
@@ -193,35 +208,41 @@ html {
   /* border: 2px solid yellow; */
   /* background-color: red; */
 }
-.lodging .lodging-center p {
-  font-family: "Akaya Telivigala", cursive;
+.service__item .lodging-center p {
+  font-family: 'Inter', sans-serif;
   padding: 5px 6px;
   font-size: 26px;
 }
-.lodging .lodging-left {
+.service__item .service__left {
   justify-content: center;
   align-items: center;
+  margin: 0.8em;
 }
-.lodging .lodging-left img {
+
+.service__reverse {
+  flex-direction: row-reverse;
+}
+
+.service__item .service__left img {
   border-radius: 75px 5px 75px 5px;
   border: 5px solid white;
-  height: 24rem;
-  width: 38rem;
+  height: 30rem;
+  width: 43rem;
   margin: 10px 18px;
-  position: absolute;
+  /* position: absolute;
   left: 2%;
-  top: 5%;
+  top: 5%; */
   box-shadow: rgb(0 0 0 / 20%) 0px 18px 8px 0px,
     rgb(0 0 0 / 19%) 0px 6px 20px 0px;
 }
 
 .lodging .lodging-right h3 {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 2rem;
   margin: 1rem 3rem;
 }
 .Lodging-features {
-  font-family: "Akaya Telivigala", cursive;
+  font-family: 'Inter', sans-serif;
   list-style: none;
   margin: 1rem 2rem;
 }
@@ -240,7 +261,7 @@ html {
   justify-content: center;
 }
 .fooding h3 {
-  font-family: "Baloo Bhaina 2", cursive;
+  font-family: 'Inter', sans-serif;
   display: flex;
   font-size: 2rem;
   padding: 5px 0px;
@@ -255,7 +276,7 @@ html {
   /* border: 2px solid yellow; */
 }
 .fooding .fooding-center p {
-  font-family: "Akaya Telivigala", cursive;
+  font-family: 'Inter', sans-serif;
   padding: 5px 6px;
   font-size: 26px;
 }
@@ -286,7 +307,7 @@ html {
 }
 
 .parking h3 {
-  font-family: "Baloo Bhaina 2", cursive;
+  font-family: 'Inter', sans-serif;
   display: flex;
   font-size: 2rem;
   padding: 5px 0px;
@@ -307,7 +328,7 @@ html {
   /* border: 2px solid yellow; */
 }
 .parking .parking-center p {
-  font-family: "Akaya Telivigala", cursive;
+  font-family: 'Inter', sans-serif;
   padding: 5px 6px;
   font-size: 26px;
 }
@@ -336,7 +357,7 @@ html {
   justify-content: center;
 }
 .sightseeing h3 {
-  font-family: "Baloo Bhaina 2", cursive;
+  font-family: 'Inter', sans-serif;
   display: flex;
   font-size: 2rem;
   padding: 5px 0px;
@@ -351,7 +372,7 @@ html {
   /* border: 2px solid yellow; */
 }
 .sightseeing .sightseeing-center p {
-  font-family: "Akaya Telivigala", cursive;
+  font-family: 'Inter', sans-serif;
   padding: 5px 6px;
   font-size: 26px;
 }
@@ -382,7 +403,7 @@ html {
 }
 
 .pickup h3 {
-  font-family: "Baloo Bhaina 2", cursive;
+  font-family: 'Inter', sans-serif;
   display: flex;
   font-size: 2rem;
   padding: 5px 0px;
@@ -403,7 +424,7 @@ html {
   /* border: 2px solid yellow; */
 }
 .pickup .pickup-center p {
-  font-family: "Akaya Telivigala", cursive;
+  font-family: 'Inter', sans-serif;
   padding: 5px 6px;
   font-size: 26px;
 }
@@ -427,20 +448,24 @@ html {
 /* <---------Packages section-------> */
 
 .packages {
-  background-color: rgb(178, 177, 192);
-  height: 50vh;
+  background-color: rgb(255, 255, 255);
+  min-height: 70vh;
   width: 100%;
 }
 .packages h1 {
-  font-family: "Kanit", sans-serif;
+  font-family: 'Inter', sans-serif;
+  font-weight: 900;
   font-size: 40px;
   justify-content: center;
   align-items: center;
   display: flex;
-  padding: 18px 0px;
+  padding: 1em 0px;
 }
 .whole-package {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
   justify-content: space-between;
 }
 .package-container {
@@ -454,13 +479,15 @@ html {
   flex-direction: row;
 }
 .image {
+  border-radius: 0.8em;
   background: #0c63b9;
   position: relative;
   flex: 1;
   max-width: 460px;
-  height: 300px;
+  height: 400px;
   margin: 20px;
   overflow: hidden;
+  box-shadow: 0 5px 25px #2020208e;
 }
 .image img {
   opacity: 0.8;
@@ -470,6 +497,8 @@ html {
   transition-property: opacity;
   width: 100%;
   opacity: 1;
+  object-fit: cover;
+  height: 400px;
 }
 .image:hover img {
   opacity: 0;
@@ -484,7 +513,8 @@ html {
   height: 100%;
 }
 .image .details h2 {
-  font-family: "Kanit", sans-serif;
+  font-family: 'Inter', sans-serif;
+  font-weight: 900;
   text-align: center;
   font-size: 35px;
   text-transform: uppercase;
@@ -493,12 +523,19 @@ html {
   transition: 0.4s;
   transition-property: transform;
 }
+
+.image:hover {
+  box-shadow: none;
+}
+
+
 .image:hover .details h2 {
   cursor: pointer;
   transform: translateY(-30px);
 }
 .image .details p {
-  font-family: "Akaya Telivigala", cursive;
+  font-family: 'Inter', sans-serif;
+  font-weight: 900;
   font-size: 20px;
   font-weight: 300;
   text-align: center;
@@ -551,7 +588,7 @@ html {
   text-align: center;
 }
 .contact .content h2 {
-  font-family: "Kanit", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 50px;
   font-weight: 500;
   color: #fff;
@@ -605,7 +642,8 @@ html {
 .contactForm {
   width: 40%;
   padding: 40px;
-  background: linear-gradient(#f13b3c, #bb64c5);
+  border-radius: 1em;
+  background: linear-gradient(#8b2896,#ff8484 );
   color: white;
 }
 .contactForm h2 {
@@ -624,18 +662,20 @@ html {
 .contactForm .inputBox textarea {
   width: 100%;
   padding: 5px 0;
-  font-size: 16px;
+  padding: 0.3em 0.5em;
+  font-size: 1.5em;
+  border-radius: 0.3em;
   margin: 10px 0;
   border: none;
-  border-bottom: 2px solid #333;
   outline: none;
   resize: none;
+  box-shadow: 0 5px 10px #76060689;
 }
 .contactForm .inputbox span {
   position: absolute;
   left: 0;
   padding: 5px 0;
-  font-size: 16px;
+  font-size: 1.3em;
   margin: 10px 0;
   pointer-events: none;
   transition: 0.5s;
@@ -649,9 +689,11 @@ html {
   font-size: 12px;
   transform: translate(-20px);
 }
-.contactForm .inputbox input[type="submit"] {
-  width: 100px;
-  background: #00bcd4;
+.contactForm .inputBox button {
+  width: 100%;
+  background: #383838;
+  box-shadow: 0 5px 10px #4c4c4c68;
+  border-radius: 0.3em;
   color: #ffff;
   border: none;
   cursor: pointer;
@@ -739,41 +781,6 @@ html {
   filter: brightness(1) grayscale(0);
 }
 
-/* <---------About Us section-------> */
-
-.about-header {
-  font-family: "Kanit", sans-serif;
-  height: 100vh;
-  width: 100%;
-  background: url("/images/about.jpg") no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-.about-main {
-  font-family: "Akaya Telivigala", cursive;
-  width: 50%;
-  background: rgba(0, 0, 0, 0.7);
-  color: #ffff;
-  text-align: center;
-  padding: 50px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.about-main:hover {
-  cursor: pointer;
-  color: rgb(202, 202, 118);
-}
-.about-main h1 {
-  padding: 15px;
-  font-size: 3.5rem;
-}
-.about-main p {
-  line-height: 2rem;
-  font-size: 22px;
-}
-
 /* <---------Footer section-------> */
 
 footer {
@@ -794,6 +801,7 @@ footer {
   font-size: 1.125rem;
   font-weight: 600;
   text-transform: uppercase;
+  margin-top: 1.125rem;
 }
 .box .content {
   margin: 20px 0 0 0;
@@ -843,6 +851,8 @@ footer {
 @media only screen and (max-width: 1024px) {
   /* <------Navbar----> */
 
+  
+
   /* <------Contact----> */
   .contact {
     padding: 50px;
@@ -859,6 +869,10 @@ footer {
   .container .contactInfo,
   .contactForm {
     width: 100%;
+  }
+
+  .container {
+    width: 95vw;
   }
 
   /* <------Gallery----> */
@@ -895,7 +909,36 @@ footer {
     display: block;
   }
 }
-@media only screen and (max-width: 430px) {
+@media only screen and (max-width: 648px) {
+  /* <------Packages----> */
+  .image{
+    width: 100vw;
+    margin: 0;
+  }
+
+  .contactForm, .contact .content  {
+    width: 95%;
+  }
+
+  .service__container {
+    flex-direction: column;
+    margin-bottom: 3.5em;
+  }
+
+  .service__right {
+    width: 90%;
+    padding: 0.2em;
+    
+  }
+
+  .service__item .service__left img {
+   
+    height: 20rem;
+    width: 95vw;
+ 
+  }
+
+
   /* <------Gallery----> */
   .main h1 {
     font-size: 1.2em;
