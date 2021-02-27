@@ -8,13 +8,14 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Hero section */
+/* <---------Hero section-------> */
 #hero {
   position: relative;
   width: 100%;
   height: 100vh;
 }
 .navbar {
+  font-family: "Josefin Sans", sans-serif;
   height: 6rem;
   display: flex;
   background: #161515;
@@ -131,7 +132,7 @@ html {
   background: #eee;
 }
 
-/* Service section */
+/* <---------Service section-------> */
 .services {
   height: 151rem;
   width: 100%;
@@ -141,15 +142,16 @@ html {
   margin: -12px 0px;
 }
 .services h1 {
+  font-family: "Kanit", sans-serif;
   font-size: 40px;
   justify-content: center;
   align-items: center;
   display: flex;
   padding: 18px 0px;
 }
-.lodging-container {
+/* .lodging-container {
   margin: 10px 0px;
-}
+} */
 .lodging {
   height: 50vh;
   display: flex;
@@ -159,17 +161,18 @@ html {
 }
 
 .lodging h3 {
+  font-family: "Baloo Bhaina 2", cursive;
   display: flex;
   font-size: 2rem;
   padding: 5px 0px;
   margin: 4px 0px;
 }
 .lodging .lodging-right {
-  /* border: 2px solid black; */
+  border-radius: 12px;
+  border: 5px solid white;
   position: absolute;
   left: 79%;
   top: 10%;
-  background-color: rgb(46, 38, 38);
   color: white;
   border: 2px solid black;
   position: absolute;
@@ -178,7 +181,8 @@ html {
   background-color: rgb(46, 38, 38);
   background: linear-gradient(#f13b3c, #bb64c5);
   height: 24rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+  box-shadow: rgb(0 0 0 / 20%) 0px 18px 8px 0px,
+    rgb(0 0 0 / 19%) 0px 6px 20px 0px;
 }
 .lodging .lodging-center {
   /* border: 2px solid black; */
@@ -190,6 +194,7 @@ html {
   /* background-color: red; */
 }
 .lodging .lodging-center p {
+  font-family: "Akaya Telivigala", cursive;
   padding: 5px 6px;
   font-size: 26px;
 }
@@ -198,20 +203,25 @@ html {
   align-items: center;
 }
 .lodging .lodging-left img {
+  border-radius: 75px 5px 75px 5px;
+  border: 5px solid white;
   height: 24rem;
   width: 38rem;
   margin: 10px 18px;
   position: absolute;
   left: 2%;
   top: 5%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: rgb(0 0 0 / 20%) 0px 18px 8px 0px,
+    rgb(0 0 0 / 19%) 0px 6px 20px 0px;
 }
 
 .lodging .lodging-right h3 {
+  font-family: "Josefin Sans", sans-serif;
   font-size: 2rem;
   margin: 1rem 3rem;
 }
 .Lodging-features {
+  font-family: "Akaya Telivigala", cursive;
   list-style: none;
   margin: 1rem 2rem;
 }
@@ -230,6 +240,7 @@ html {
   justify-content: center;
 }
 .fooding h3 {
+  font-family: "Baloo Bhaina 2", cursive;
   display: flex;
   font-size: 2rem;
   padding: 5px 0px;
@@ -244,6 +255,7 @@ html {
   /* border: 2px solid yellow; */
 }
 .fooding .fooding-center p {
+  font-family: "Akaya Telivigala", cursive;
   padding: 5px 6px;
   font-size: 26px;
 }
@@ -252,13 +264,16 @@ html {
   align-items: center;
 }
 .fooding .fooding-right img {
+  border-radius: 75px 5px 75px 5px;
+  border: 5px solid white;
   height: 24rem;
   width: 30rem;
   margin: 10px 18px;
   position: absolute;
   right: 2.3%;
   top: 10%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: rgb(0 0 0 / 20%) 0px 18px 8px 0px,
+    rgb(0 0 0 / 19%) 0px 6px 20px 0px;
 }
 
 .parking {
@@ -271,6 +286,7 @@ html {
 }
 
 .parking h3 {
+  font-family: "Baloo Bhaina 2", cursive;
   display: flex;
   font-size: 2rem;
   padding: 5px 0px;
@@ -291,6 +307,7 @@ html {
   /* border: 2px solid yellow; */
 }
 .parking .parking-center p {
+  font-family: "Akaya Telivigala", cursive;
   padding: 5px 6px;
   font-size: 26px;
 }
@@ -299,13 +316,16 @@ html {
   align-items: center;
 }
 .parking .parking-left img {
+  border-radius: 75px 5px 75px 5px;
+  border: 5px solid white;
   height: 24rem;
   width: 35rem;
   margin: 10px 18px;
   position: absolute;
   left: 2%;
   top: 5%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: rgb(0 0 0 / 20%) 0px 18px 8px 0px,
+    rgb(0 0 0 / 19%) 0px 6px 20px 0px;
 }
 
 .sightseeing {
@@ -316,6 +336,7 @@ html {
   justify-content: center;
 }
 .sightseeing h3 {
+  font-family: "Baloo Bhaina 2", cursive;
   display: flex;
   font-size: 2rem;
   padding: 5px 0px;
@@ -330,6 +351,7 @@ html {
   /* border: 2px solid yellow; */
 }
 .sightseeing .sightseeing-center p {
+  font-family: "Akaya Telivigala", cursive;
   padding: 5px 6px;
   font-size: 26px;
 }
@@ -338,13 +360,16 @@ html {
   align-items: center;
 }
 .sightseeing .sightseeing-right img {
+  border-radius: 75px 5px 75px 5px;
+  border: 5px solid white;
   height: 24rem;
   width: 35rem;
   margin: 10px 18px;
   position: absolute;
   right: 2.3%;
   top: 10%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: rgb(0 0 0 / 20%) 0px 18px 8px 0px,
+    rgb(0 0 0 / 19%) 0px 6px 20px 0px;
 }
 
 .pickup {
@@ -357,6 +382,7 @@ html {
 }
 
 .pickup h3 {
+  font-family: "Baloo Bhaina 2", cursive;
   display: flex;
   font-size: 2rem;
   padding: 5px 0px;
@@ -377,6 +403,7 @@ html {
   /* border: 2px solid yellow; */
 }
 .pickup .pickup-center p {
+  font-family: "Akaya Telivigala", cursive;
   padding: 5px 6px;
   font-size: 26px;
 }
@@ -385,16 +412,19 @@ html {
   align-items: center;
 }
 .pickup .pickup-left img {
+  border-radius: 75px 5px 75px 5px;
+  border: 5px solid white;
   height: 24rem;
   width: 35rem;
   margin: 10px 18px;
   position: absolute;
   left: 2%;
   top: 5%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: rgb(0 0 0 / 20%) 0px 18px 8px 0px,
+    rgb(0 0 0 / 19%) 0px 6px 20px 0px;
 }
 
-/* --- Packages --> */
+/* <---------Packages section-------> */
 
 .packages {
   background-color: rgb(178, 177, 192);
@@ -402,6 +432,7 @@ html {
   width: 100%;
 }
 .packages h1 {
+  font-family: "Kanit", sans-serif;
   font-size: 40px;
   justify-content: center;
   align-items: center;
@@ -423,7 +454,7 @@ html {
   flex-direction: row;
 }
 .image {
-  background: #50a7ff;
+  background: #0c63b9;
   position: relative;
   flex: 1;
   max-width: 460px;
@@ -437,9 +468,11 @@ html {
   vertical-align: top;
   transition: 0.6s;
   transition-property: opacity;
+  width: 100%;
+  opacity: 1;
 }
 .image:hover img {
-  opacity: 1;
+  opacity: 0;
 }
 .image .details {
   z-index: 1;
@@ -451,6 +484,7 @@ html {
   height: 100%;
 }
 .image .details h2 {
+  font-family: "Kanit", sans-serif;
   text-align: center;
   font-size: 35px;
   text-transform: uppercase;
@@ -460,22 +494,25 @@ html {
   transition-property: transform;
 }
 .image:hover .details h2 {
+  cursor: pointer;
   transform: translateY(-30px);
 }
 .image .details p {
-  margin: 30px;
-  font-size: 18px;
-  font-weight: 600;
+  font-family: "Akaya Telivigala", cursive;
+  font-size: 20px;
+  font-weight: 300;
   text-align: center;
   opacity: 0;
   transition: 0.6s;
   transition-property: opacity;
+  margin: 30px 8px 4px 8px;
 }
 .image:hover .details p {
+  cursor: pointer;
   opacity: 1;
   transform: translateY(-40px);
 }
-.more {
+/* .more {
   position: absolute;
   background: rgba(255, 255, 255, 0.8);
   width: 100%;
@@ -491,12 +528,11 @@ html {
   bottom: 0;
 }
 .more .read-more {
-  /* color: rgba(17, 6, 6, 0); */
   text-decoration: none;
   font-size: 20px;
   font-weight: 500;
   text-transform: uppercase;
-}
+} */
 
 /* Contact us */
 .contact {
@@ -515,9 +551,12 @@ html {
   text-align: center;
 }
 .contact .content h2 {
-  font-size: 36px;
+  font-family: "Kanit", sans-serif;
+  font-size: 50px;
   font-weight: 500;
   color: #fff;
+  margin: 25px;
+  font-weight: 500;
 }
 .contact .content p {
   font-weight: 300;
@@ -566,12 +605,15 @@ html {
 .contactForm {
   width: 40%;
   padding: 40px;
-  background: #ffff;
+  background: linear-gradient(#f13b3c, #bb64c5);
+  color: white;
 }
 .contactForm h2 {
   font-size: 30px;
-  color: #333;
+  color: #fff;
   font-weight: 500;
+  display: flex;
+  justify-content: center;
 }
 .contactForm .inputBox {
   position: relative;
@@ -617,7 +659,7 @@ html {
   font-size: 18px;
 }
 
-/* Gallery */
+/* <---------Gallery section-------> */
 .main {
   position: relative;
   height: 100%;
@@ -697,9 +739,10 @@ html {
   filter: brightness(1) grayscale(0);
 }
 
-/* About Us */
+/* <---------About Us section-------> */
 
 .about-header {
+  font-family: "Kanit", sans-serif;
   height: 100vh;
   width: 100%;
   background: url("/images/about.jpg") no-repeat;
@@ -707,6 +750,7 @@ html {
   background-position: center;
 }
 .about-main {
+  font-family: "Akaya Telivigala", cursive;
   width: 50%;
   background: rgba(0, 0, 0, 0.7);
   color: #ffff;
@@ -730,7 +774,75 @@ html {
   font-size: 22px;
 }
 
-@media only screen and (max-width: 991px) {
+/* <---------Footer section-------> */
+
+footer {
+  /* position: fixed;
+  bottom: 0px; */
+  width: 100%;
+  background: #111;
+}
+.main-content {
+  display: flex;
+}
+.main-content .box {
+  color: white;
+  flex-basis: 50%;
+  padding: 10px 20px;
+}
+.box h2 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.box .content {
+  margin: 20px 0 0 0;
+}
+.left .content .social {
+  margin: 20px 0 0 0;
+}
+.left .content p {
+  text-align: justify;
+}
+
+.left .content .social a {
+  padding: 0 2px;
+}
+.left .content .social a span {
+  height: 40px;
+  width: 40px;
+  background: #ffff;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.left .content .social a span:hover {
+  background: #d4d0d0;
+}
+
+.place,
+.phone,
+.email {
+  display: flex;
+  margin: 25px 0px;
+}
+
+.mail,
+.msg {
+  margin: 1px;
+}
+
+.footer-copyright {
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+@media only screen and (max-width: 1024px) {
+  /* <------Navbar----> */
+
   /* <------Contact----> */
   .contact {
     padding: 50px;
@@ -761,6 +873,26 @@ html {
   .main .gallery {
     display: grid;
     grid-template-columns: auto auto auto auto;
+  }
+
+  /* <------Contact us----> */
+  .about-main {
+    height: 70vh;
+  }
+  .about-main h1 {
+    font-size: 2rem;
+  }
+  .about-main p {
+    font-size: 15px;
+  }
+
+  /* <------Packages----> */
+  .whole-package {
+    display: block;
+  }
+  /* <------Footer----> */
+  .main-content {
+    display: block;
   }
 }
 @media only screen and (max-width: 430px) {
