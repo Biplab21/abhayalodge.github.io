@@ -13,20 +13,24 @@
 </head>
 
 <body>
-    <div class="navbar">
-        <div class="logo">
-            <span>Welcome to Abhaya Lodge</span>
+    <div class="navbar h_nav">
+        <div class="logo v_class">
+            <span>Welcome to Lodge Avoya </span>
         </div>
         <div class="menu">
             <ul>
                 <li><a href="/index.html">Home</a></li>
                 <li><a href="/index.html">Services</a></li>
-                <li><a href="#packages">Packages</a></li>
+                <li><a href="/index.html">Packages</a></li>
                 <li><a href="/gallery.html">Gallery</a></li>
                 <li><a href="/contactUs.html">Contact</a></li>
             </ul>
+            <div class="hamburger">
+                <i class="fa fa-bars "></i>
+            </div>
         </div>
     </div>
+
     <section class="contact">
         <div class="content">
             <h2>Contact Us</h2>
@@ -56,26 +60,26 @@
                 </div>
             </div>
             <div class="contactForm">
-                <form action="">
+                <form action="https://formspree.io/f/xrgowrpo" method="POST" id="my-form">
                     <h2>Let Us Know</h2>
                     <div class="inputBox">
                         <span>Full Name</span>
-                        <input type="text" name="" required="required">
+                        <input type="text" name="name" required="required">
                     </div>
                     <div class="inputBox">
                         <span>Email</span>
-                        <input type="text" name="" required="required">
+                        <input type="text" name="email" required="required">
                     </div>
                     <div class="inputBox">
                         <span>Phone</span>
-                        <input type="text" name="" required="required">
+                        <input type="text" name="phone" required="required">
                     </div>
                     <div class="inputBox">
                         <span>Type your message</span>
-                        <textarea required="required"></textarea>
+                        <textarea name="message" required="required"></textarea>
                     </div>
                     <div class="inputBox">
-                        <button type="submit">Submit</button>
+                        <button type="submit" id="my-form-button">Submit</button>
 
                     </div>
                 </form>
@@ -136,6 +140,8 @@
             <p>Copyright © 2021 Ayodhya Lodge | Developed By Lorem ipsum</p>
         </div>
     </footer>
+    <script src="/resp.js"></script>
+    <script src="/form.js"></script>
 </body>
 
 </html>

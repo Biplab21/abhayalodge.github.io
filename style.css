@@ -891,7 +891,7 @@ footer {
   font-size: 1.2rem;
 }
 .quick_menu ul li {
-  list-style: none;
+  /* list-style: none; */
   margin: 0.75rem 0;
 }
 .quick_menu ul li a {
@@ -1011,6 +1011,10 @@ footer {
   /* <------Navigation----> */
   .hamburger {
     display: block;
+    display: block;
+    position: absolute;
+    top: 5vh;
+    right: 4vw;
   }
   .navbar {
     display: flex;
@@ -1018,7 +1022,7 @@ footer {
     height: 100vh;
     align-items: center;
     padding: 3rem;
-    transition: all 0.3s ease-out;
+    transition: all 0.5s ease-out;
   }
   .logo {
     margin: 3rem 0;
@@ -1053,8 +1057,16 @@ footer {
   }
   .navigation-dots {
     left: 43%;
+    top: 92%;
   }
   /* <------Services----> */
+  .service__item .service__left img {
+    height: 15rem;
+    width: 80vw;
+  }
+  .service__right {
+    font-size: 1.2rem;
+  }
   .room_amentites {
     display: flex;
     flex-direction: column;
@@ -1085,12 +1097,20 @@ footer {
     width: 90%;
     padding: 0.2em;
   }
-
-  .service__item .service__left img {
-    height: 20rem;
-    width: 95vw;
+  .image:hover .details h2 {
+    cursor: pointer;
+    transform: translateY(-30px);
+    padding: 0 0.75rem;
   }
-
+  .image .details .points {
+    padding: 0 2rem;
+  }
+  .image:hover .details p {
+    font-size: 17px;
+  }
+  .image .details .points {
+    font-size: 16px;
+  }
   /* <------Gallery----> */
   .main h1 {
     font-size: 1.2em;
@@ -1113,5 +1133,32 @@ footer {
   .main .gallery .img img {
     display: block;
     filter: brightness(1) grayscale(0);
+  }
+  /* <------Footer----> */
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .quick_menu {
+    margin-left: -2rem;
+  }
+  .footer-copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.3rem;
+  }
+  .left .content .social {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .main-content .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }
