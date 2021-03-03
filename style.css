@@ -16,8 +16,9 @@ body {
 .hamburger {
   color: white;
   display: none;
+  font-size: 2em;
   position: absolute;
-  top: 2%;
+  top: 5vh;
   right: 2%;
 }
 
@@ -31,7 +32,7 @@ body {
   top: 0;
   left: 0;
   z-index: 999;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 .logo {
   width: 30%;
@@ -48,6 +49,8 @@ body {
 .logo span {
   font-size: 25px;
   font-weight: 600;
+  position: absolute;
+  left: 8%;
 }
 .menu {
   display: flex;
@@ -104,6 +107,7 @@ body {
   height: 100vh;
   object-fit: cover;
 }
+
 .next-btn,
 .prev-btn {
   background: #eee;
@@ -161,7 +165,7 @@ body {
   width: 100%;
 }
 .whole-service {
-  background-color: wheat;
+  background-color: #fff;
   padding: 10em auto;
 }
 .services h1 {
@@ -257,8 +261,8 @@ body {
   /* position: absolute;
   left: 2%;
   top: 5%; */
-  box-shadow: rgb(0 0 0 / 20%) 0px 18px 8px 0px,
-    rgb(0 0 0 / 19%) 0px 6px 20px 0px;
+  box-shadow: rgb(0 0 0 / 20%) 5px 10px 20px 10px,
+    rgb(0 0 0 / 20%) 7px 9px 20px 0px;
 }
 
 .lodging .lodging-right h3 {
@@ -485,6 +489,7 @@ body {
   align-items: center;
   display: flex;
   padding: 1em 0px;
+  text-shadow: 0 1px 5px #3e3e3e57;
 }
 .whole-package {
   display: flex;
@@ -565,7 +570,8 @@ body {
   opacity: 0;
   transition: 0.6s;
   transition-property: opacity;
-  margin: 30px 8px 4px 8px;
+  margin: 15px 8px;
+  display: none;
 }
 .image:hover .details p {
   cursor: pointer;
@@ -581,7 +587,7 @@ body {
   opacity: 0;
   transition: 0.6s;
   transition-property: opacity;
-  margin: 30px 8px 4px 8px;
+  margin: 12px 8px 4px 8px;
   padding: 2rem;
 }
 .image:hover .points {
@@ -829,6 +835,7 @@ body {
 footer {
   /* position: fixed;
   bottom: 0px; */
+  font-family: "Inter", sans-serif;
   width: 100%;
   background: #111;
 }
@@ -888,6 +895,7 @@ footer {
 }
 .quick_menu {
   margin: 20px 0 0 0;
+  padding: 0 20px;
   font-size: 1.2rem;
 }
 .quick_menu ul li {
@@ -914,7 +922,6 @@ footer {
     flex-direction: column;
     height: 100vh;
     align-items: center;
-    padding: 3rem;
     transition: all 0.3s ease-out;
   }
   .logo {
@@ -946,7 +953,7 @@ footer {
     height: 3rem;
   }
   .v_class {
-    opacity: 0;
+    display: none;
   }
   .navigation-dots {
     left: 43%;
@@ -1013,7 +1020,7 @@ footer {
     display: block;
     display: block;
     position: absolute;
-    top: 5vh;
+    top: 2vh;
     right: 4vw;
   }
   .navbar {
@@ -1021,12 +1028,20 @@ footer {
     flex-direction: column;
     height: 100vh;
     align-items: center;
-    padding: 3rem;
     transition: all 0.5s ease-out;
   }
   .logo {
     margin: 3rem 0;
     width: 100vw;
+    height: 5px;
+    position: relative;
+  }
+  .logo span {
+    font-size: 25px;
+    font-weight: 600;
+    position: absolute;
+    left: 8%;
+    padding-bottom: 33px;
   }
   .menu {
     align-items: center;
@@ -1050,7 +1065,8 @@ footer {
     padding: 0.5rem;
   }
   .h_nav {
-    height: 2rem;
+    height: 4rem;
+    overflow: hidden;
   }
   .v_class {
     opacity: 0;
@@ -1081,6 +1097,13 @@ footer {
   .image {
     width: 100vw;
     margin: 0;
+  }
+  .image .details .points {
+    margin-top: 3rem;
+    font-size: 20px;
+  }
+  .image .details .points li {
+    font-size: 20px;
   }
 
   .contactForm,
@@ -1141,12 +1164,11 @@ footer {
     justify-content: center;
     align-items: center;
   }
-  .quick_menu {
-    margin-left: -2rem;
-  }
+
   .footer-copyright {
     display: flex;
     justify-content: center;
+    text-align: center;
     align-items: center;
     padding: 1.3rem;
   }
@@ -1155,10 +1177,12 @@ footer {
     align-items: center;
     justify-content: space-evenly;
   }
+  .left .content p {
+    text-align: left;
+  }
   .main-content .box {
     display: flex;
+    width: 100%;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
   }
 }
