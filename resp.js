@@ -1,21 +1,23 @@
 burger = document.querySelector(".hamburger");
 navbar = document.querySelector(".navbar");
 h_nav = document.querySelector(".h_nav");
-services = document.querySelector(".services");
-packages = document.querySelector(".packages");
+services = document.getElementById("#services");
+closenav = document.querySelector(".close_nav");
+packages = document.getElementById("#packages");
 
 burger.addEventListener('click', () => {
     navbar.classList.toggle('h_nav');
 });
 
+closenav.addEventListener('click', () => {
+    navbar.classList.toggle('h_nav');
+});
+
+// close hamburger menu after click 
 // services.addEventListener('click', () => {
-//     if (navbar.classList = h_nav)
-//     {
-//         navbar.classList.remove('h_nav');
-//     }
-//     else
-//     {
-//         navbar.classList.toggle('h_nav');
-//     }
+//     navbar.style.height = "10vh";
 // });
 
+//closenav.addEventListener('click', () => {
+//    navbar.classList.remove("h_nav");
+//})
