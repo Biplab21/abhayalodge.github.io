@@ -26,7 +26,8 @@ body {
   font-family: "Inter", sans-serif;
   height: 4.5rem;
   display: flex;
-  background: #161515;
+  background-color: #39b54a;
+  /* background: #161515; */
   position: sticky;
   position: -webkit-sticky;
   top: 0;
@@ -46,11 +47,21 @@ body {
 .logo:hover {
   cursor: pointer;
 }
+.logo img {
+  height: 4rem;
+  width: 6rem;
+  position: absolute;
+  left: 2%;
+  box-shadow: 17 0 0 0px;
+  border-radius: 6%;
+}
+
 .logo span {
   font-size: 25px;
   font-weight: 600;
   position: absolute;
   left: 8%;
+  display: none;
 }
 .menu {
   display: flex;
@@ -70,13 +81,13 @@ body {
 }
 .menu ul li a {
   text-decoration: none;
-  color: white;
-  font-size: 15px;
-
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
   padding: 1em 1em;
 }
 .menu ul li a:hover {
-  background: rgb(37, 34, 34);
+  background: #34aa44;
   border-radius: 0.3em;
 }
 #hero {
@@ -621,6 +632,14 @@ body {
 } */
 
 /* Contact us */
+.text_contact {
+  display: flex;
+  margin-left: 20px;
+  font-size: 16px;
+  color: #fff;
+  flex-direction: column;
+  font-weight: 500;
+}
 .contact {
   position: relative;
   min-height: 100vh;
@@ -679,9 +698,10 @@ body {
   display: flex;
   margin-left: 20px;
   font-size: 16px;
-  color: #fff;
+  color: #111;
   flex-direction: column;
-  font-weight: 300;
+  font-weight: 500;
+  text-decoration: none;
 }
 .container .contactInfo .box .icon .text h3 {
   font-weight: 500;
@@ -837,13 +857,13 @@ footer {
   bottom: 0px; */
   font-family: "Inter", sans-serif;
   width: 100%;
-  background: #111;
+  background: #39b54a;
 }
 .main-content {
   display: flex;
 }
 .main-content .box {
-  color: white;
+  color: #111;
   flex-basis: 50%;
   padding: 10px 20px;
 }
@@ -863,6 +883,7 @@ footer {
 .left .content p {
   text-align: justify;
   font-size: 1.2rem;
+  font-weight: 500;
 }
 
 .left .content .social a {
@@ -904,10 +925,12 @@ footer {
 }
 .quick_menu ul li a {
   text-decoration: none;
-  color: #fff;
+  color: #111;
+  font-weight: 500;
 }
 .footer-copyright {
-  color: white;
+  color: #111;
+  font-weight: 500;
   display: flex;
   justify-content: center;
   padding: 10px;
@@ -1016,14 +1039,19 @@ footer {
 }
 @media only screen and (max-width: 648px) {
   /* <------Navigation----> */
+  .logo img {
+    position: absolute;
+  }
+
   .hamburger {
     display: block;
     display: block;
     position: absolute;
-    top: 2vh;
+    top: 4vh;
     right: 4vw;
   }
   .navbar {
+    position: relative;
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -1065,7 +1093,7 @@ footer {
     padding: 0.5rem;
   }
   .h_nav {
-    height: 4rem;
+    height: 6rem;
     overflow: hidden;
   }
   .v_class {
@@ -1119,6 +1147,8 @@ footer {
   .service__right {
     width: 90%;
     padding: 0.2em;
+    font-family: "Inter";
+    font-weight: 500;
   }
   .image:hover .details h2 {
     cursor: pointer;
@@ -1141,7 +1171,8 @@ footer {
   }
   .main p {
     font-size: 0.89em;
-    width: 400px;
+    width: 100vw;
+    padding: 4px 2px;
   }
   .main .gallery {
     display: block;

@@ -12,12 +12,3 @@ burger.addEventListener('click', () => {
 closenav.addEventListener('click', () => {
     navbar.classList.toggle('h_nav');
 });
-
-// close hamburger menu after click 
-// services.addEventListener('click', () => {
-//     navbar.style.height = "10vh";
-// });
-
-//closenav.addEventListener('click', () => {
-//    navbar.classList.remove("h_nav");
-//})
