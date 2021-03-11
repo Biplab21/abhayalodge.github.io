@@ -27,7 +27,7 @@ body {
   height: 4.5rem;
   display: flex;
   background-color: #39b54a;
-  /* background: #161515; */
+  box-shadow: 0 5px 10px -10px #202020;
   position: sticky;
   position: -webkit-sticky;
   top: 0;
@@ -657,7 +657,7 @@ body {
 }
 .contact .content h2 {
   font-family: "Inter", sans-serif;
-  font-size: 50px;
+  font-size: 39px;
   font-weight: 500;
   color: #fff;
   margin: 25px;
@@ -1057,6 +1057,7 @@ footer {
     height: 100vh;
     align-items: center;
     transition: all 0.5s ease-out;
+    box-shadow: 0 5px 10px -10px #202020;
   }
   .logo {
     margin: 3rem 0;
