@@ -22,6 +22,18 @@ function init () {
 }
 init();
 
+// Auto Slides---->
+var counter = 1;
+setInterval(() => {
+    if (currentSlide >= numberOfImages - 1)
+    {
+        goToSlide(0);
+        return;
+    }
+    currentSlide++;
+    goToSlide(currentSlide);
+}, 5000);
+
 // Create navigation dots
 
 function createNavigationDots () {
